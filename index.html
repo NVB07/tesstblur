@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="count">0</div>
+        <script>
+            let blur = 0;
+            window.onblur = () => {
+                blur++;
+                document.querySelector(".count").innerHTML = blur;
+                console.log("blur");
+            };
+        </script>
+    </body>
+</html>
